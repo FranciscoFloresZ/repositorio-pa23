@@ -59,3 +59,5 @@ Peso: {self.__peso}
 Altura: {self.__altura}
 Ciudad: {self.__ciudad}
 """
+     def __str__(self):
+        return f"Persona: {self.get_nombre()} ({self.get_edad()} años)"
