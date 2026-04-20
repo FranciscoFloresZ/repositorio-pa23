@@ -40,3 +40,6 @@ class Persona:
 
     def cambiar_ciudad(self, nueva_ciudad):
         self.__ciudad = nueva_ciudad
+    
+    def info(self):
+        return f"Nombre: {self.__nombre}, Edad: {self.__edad}, Ciudad: {self.__ciudad}"
