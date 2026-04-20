@@ -20,3 +20,17 @@ class Persona:
 
     def get_ciudad(self):
         return self.__ciudad
+            def set_nombre(self, nombre):
+        self.__nombre = nombre
+
+    def set_edad(self, edad):
+        self.__edad = edad
+
+    def set_peso(self, peso):
+        self.__peso = peso
+
+    def set_altura(self, altura):
+        self.__altura = altura
+
+    def set_ciudad(self, ciudad):
+        self.__ciudad = ciudad
