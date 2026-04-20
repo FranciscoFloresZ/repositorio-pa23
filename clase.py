@@ -34,3 +34,9 @@ class Persona:
 
     def set_ciudad(self, ciudad):
         self.__ciudad = ciudad
+
+    def cumplir_anios(self):
+        self.__edad += 1
+
+    def cambiar_ciudad(self, nueva_ciudad):
+        self.__ciudad = nueva_ciudad
