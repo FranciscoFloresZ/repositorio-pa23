@@ -50,3 +50,12 @@ class Persona:
         p.cumplir_anios()
         p.cambiar_ciudad("CDMX")
         print(p.info())
+
+    def info(self):
+        return f"""
+Nombre: {self.__nombre}
+Edad: {self.__edad}
+Peso: {self.__peso}
+Altura: {self.__altura}
+Ciudad: {self.__ciudad}
+"""
