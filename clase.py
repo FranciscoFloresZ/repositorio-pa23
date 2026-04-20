@@ -43,3 +43,10 @@ class Persona:
     
     def info(self):
         return f"Nombre: {self.__nombre}, Edad: {self.__edad}, Ciudad: {self.__ciudad}"
+
+        p = Persona("Juan", 18, 70, 1.75, "Monterrey")
+
+        print(p.info())
+        p.cumplir_anios()
+        p.cambiar_ciudad("CDMX")
+        print(p.info())
