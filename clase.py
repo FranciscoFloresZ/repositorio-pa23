@@ -1,4 +1,5 @@
-class Persona:
+class UsuarioApp:
+
     def __init__(self, nombre, edad, peso, altura, ciudad):
         self.__nombre = nombre
         self.__edad = edad
@@ -6,7 +7,7 @@ class Persona:
         self.__altura = altura
         self.__ciudad = ciudad
 
-     def get_nombre(self):
+    def get_nombre(self):
         return self.__nombre
 
     def get_edad(self):
@@ -20,7 +21,8 @@ class Persona:
 
     def get_ciudad(self):
         return self.__ciudad
-            def set_nombre(self, nombre):
+
+    def set_nombre(self, nombre):
         self.__nombre = nombre
 
     def set_edad(self, edad):
@@ -40,18 +42,11 @@ class Persona:
 
     def cambiar_ciudad(self, nueva_ciudad):
         self.__ciudad = nueva_ciudad
-    
+
     def info(self):
         return f"Nombre: {self.__nombre}, Edad: {self.__edad}, Ciudad: {self.__ciudad}"
 
-        p = Persona("Juan", 18, 70, 1.75, "Monterrey")
-
-        print(p.info())
-        p.cumplir_anios()
-        p.cambiar_ciudad("CDMX")
-        print(p.info())
-
-    def info(self):
+    def info_extendida(self):
         return f"""
 Nombre: {self.__nombre}
 Edad: {self.__edad}
@@ -59,5 +54,13 @@ Peso: {self.__peso}
 Altura: {self.__altura}
 Ciudad: {self.__ciudad}
 """
-     def __str__(self):
+
+    def __str__(self):
         return f"Persona: {self.get_nombre()} ({self.get_edad()} años)"
+
+p = UsuarioApp("Juan", 18, 70, 1.75, "Monterrey")
+
+print(p.info())
+p.cumplir_anios()
+p.cambiar_ciudad("CDMX")
+print(p.info())
